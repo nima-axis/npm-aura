@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://i.ibb.co/4n55K563/1777104289725.jpg" alt="SL AURA" style="border-radius:50%"/>
+<img src="https://i.ibb.co/3yfTkn78/IMG-20260804-WA0037.jpg" alt="SL AURA" style="border-radius:50%"/>
 
 
 # 🖤 AURA — WhatsApp Bot

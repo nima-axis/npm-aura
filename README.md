@@ -21,7 +21,26 @@
 
 Pick your platform, paste the **one line**, press enter. No prompts, no confirmations — everything runs fully non-interactively from start to finish.
 
+
+### 📲 Step 0 — Install Termux (if you don't have it)
+
+
+
+Download and install Termux from F-Droid (official, up-to-date build):
+
+👉 [https://f-droid.org/repo/com.termux_1022.apk](https://f-droid.org/repo/com.termux_1022.apk)
+
+> ⚠️ Use this F-Droid build only — the Play Store version of Termux is outdated and broken for many packages.
+
+Once installed, open Termux and paste the one-liner below.
+
+
+
+
+
 ### 📱 Termux (Android)
+
+
 
 ```bash
 DEBIAN_FRONTEND=noninteractive pkg update -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" && DEBIAN_FRONTEND=noninteractive pkg upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" && pkg install -y nodejs-lts git python which termux-api && termux-setup-storage && npm install -g @astralcore/aura-wb && aura-wb
@@ -29,25 +48,47 @@ DEBIAN_FRONTEND=noninteractive pkg update -y -o Dpkg::Options::="--force-confdef
 
 > 📦 Storage permission popup will appear once — tap **Allow**. That's the only manual step, ever.
 
+
+
+
+
 ### 🐧 Ubuntu / Debian (VPS)
+
+
 
 ```bash
 sudo DEBIAN_FRONTEND=noninteractive apt-get update -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" && sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" nodejs npm git python3 build-essential && sudo npm install -g @astralcore/aura-wb && aura-wb
 ```
 
+
+
+
+
 ### 🎩 CentOS / Fedora / RHEL (VPS)
+
+
 
 ```bash
 sudo dnf update -y -q && sudo dnf install -y -q nodejs npm git python3 gcc-c++ make && sudo npm install -g @astralcore/aura-wb && aura-wb
 ```
 
+
+
+
 ### 🏔️ Alpine (Docker containers)
+
+
 
 ```bash
 apk update -q && apk add --no-cache -q nodejs npm git python3 build-base && npm install -g @astralcore/aura-wb && aura-wb
 ```
 
+
+
+
 ### 🍎 macOS
+
+
 
 ```bash
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && NONINTERACTIVE=1 brew install node git && npm install -g @astralcore/aura-wb && aura-wb
@@ -55,7 +96,13 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 
 > 🔧 If this is a brand-new Mac, macOS may pop up a one-time GUI dialog to install Xcode Command Line Tools — that's an Apple system dialog, not something any script can skip. Click **Install** if it appears.
 
+
+
+
+
 ### 🪟 Windows (PowerShell — run as Administrator)
+
+
 
 ```powershell
 $ProgressPreference='SilentlyContinue'; winget install -e --id OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements --silent; winget install -e --id Git.Git --accept-package-agreements --accept-source-agreements --silent; npm install -g @astralcore/aura-wb; aura-wb
@@ -63,7 +110,13 @@ $ProgressPreference='SilentlyContinue'; winget install -e --id OpenJS.NodeJS.LTS
 
 ---
 
+
+
+
+
 ## 🔄 Restart the bot
+
+
 
 Session data is saved automatically — no need to pair again.
 
@@ -73,7 +126,11 @@ aura-wb
 
 ---
 
+
+
+
 ## 📞 Contact
+
 
 Need help, custom setup, or found a bug?
 

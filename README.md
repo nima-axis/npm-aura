@@ -1,5 +1,8 @@
 <div align="center">
 
+<img src="https://i.ibb.co/4n55K563/1777104289725.jpg" alt="SL AURA" style="border-radius:50%"/>
+
+
 # 🖤 AURA — WhatsApp Bot
 
 **⛧ The dark has awakened. Speak, and Aura listens. ⛧**
